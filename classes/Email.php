@@ -41,9 +41,10 @@ class Email
         $contenido = '<html>';
         $contenido .= "<p><strong>Hola " . $this->nombre .  "</strong> Has creado tu cuenta en Proyecto Integradora, solo debes confirmarla presionando el siguiente enlace</p>";
         $contenido .= "<p>Presiona aquí: <a href='http://" . $_ENV['APP_URL'] . "/confirmar?token="  . $this->token . "'>Confirmar Cuenta</a>";
-        $contenido .= "<p>Si tu no solicitaste este cambio, puedes ignorar el mensaje</p>";
+        $contenido .= "<p>Si tú no solicitaste este cambio, puedes ignorar el mensaje</p>";
         $contenido .= '</html>';
         $mail->Body = $contenido;
+
 
         //Enviar el mail
         $mail->send();
