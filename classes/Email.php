@@ -63,7 +63,7 @@ class Email
     
         $mail->setFrom('dsm23190122.jgonzalez@alumnos.utsv.edu.mx');
         $mail->addAddress('dsm23190122.jgonzalez@alumnos.utsv.edu.mx', 'jgonzalez.com');
-        $mail->Subject = 'Confirma tu Cuenta';
+        $mail->Subject = 'restablecer contraseña';
 
         // Set HTML
         $mail->isHTML(TRUE);
